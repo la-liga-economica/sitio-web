@@ -1,0 +1,36 @@
+---
+title: Combinatoria
+authors:
+- Victor Hernandez
+date: '2021-10-06'
+slug: []
+categories:
+  - estadistica
+  - R
+tags:
+  - estadistica
+  - probabilidad
+banner: img/banners/banner_combinatoria.PNG
+---
+
+<script src="{{< blogdown/postref >}}index_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="permutaciones" class="section level2">
+<h2>Permutaciones</h2>
+<p>Las permutaciones de <span class="math inline">\(n\)</span> elementos son las posibles ordenaciones de un conjunto de <span class="math inline">\(n\)</span> elementos distintos.</p>
+<p><span class="math display">\[n!=1 \cdot 2 \cdot 3 \cdot \dotsc \cdot (n-2) \cdot (n-1) \cdot n\]</span></p>
+<p>Por convención, sólo hay una permutación de cero elementos:</p>
+<p><span class="math display">\[0!=1\]</span></p>
+<p>Una propiedad útil es que la división de dos permutaciones deja sólo el múltiplo de los números de la diferencia. Por
+ejemplo:</p>
+<p><span class="math display">\[\frac{10!}{7!} = \frac{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 \cdot 9 \cdot 10}
+{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7} = 8 \cdot 9 \cdot 10\]</span></p>
+<p>En el lenguaje R, se puede usar la función <code>factorial(n)</code> para hacer el cálculo numérico:</p>
+<pre class="r"><code>factorial(3)</code></pre>
+<pre><code>## [1] 6</code></pre>
+<pre class="r"><code>factorial(4)</code></pre>
+<pre><code>## [1] 24</code></pre>
+<pre class="r"><code>factorial(0)</code></pre>
+<pre><code>## [1] 1</code></pre>
+</div>
