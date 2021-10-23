@@ -10,231 +10,63 @@ paginate: 10
 menu:
   main:
     - identifier: menu.home
-      name: Home
+      name: Inicio
       url: /
       weight: 1
-    - name: 'Option 1: Default Page'
-      parent: menu.home
-      url: /
-      weight: 1
-    - name: 'Option 2: Application'
-      parent: menu.home
-      url: /
-      weight: 2
-    - name: 'Option 3: Startup'
-      parent: menu.home
-      url: /
-      weight: 3
-    - name: 'Option 4: Agency'
-      parent: menu.home
-      url: /
-      weight: 4
-    - name: 'Option 5: Portfolio'
-      parent: menu.home
-      url: /
-      weight: 5
-    - identifier: menu.features
-      name: Features
+    - identifier: menu.temas
+      name: Temas
       url: /img/template-easy-customize.png
-      weight: 3
-    - identifier: section.shortcodes
-      name: Shortcodes
-      parent: menu.features
+      weight: 2
+    - identifier: section.teoria
+      name: "Teoría económica"
+      parent: menu.temas
       post: 1
       url: ''
       weight: 1
-    - identifier: section.headervariations
-      name: Header variations
-      parent: menu.features
+    - name: "Microeconomía"
+      parent: section.teoria
+      url: ''
+      weight: 1
+    - name: "Macroeconomía"
+      parent: section.teoria
+      url: ''
+      weight: 2
+    - name: "Mesoeconomía"
+      parent: section.teoria
+      url: ''
+      weight: 3
+    - identifier: section.aplicada
+      name: "Economía aplicada"
+      parent: menu.temas
       post: 2
       url: ''
       weight: 2
-    - name: Accordions
-      parent: section.shortcodes
+    - name: "Modelos para México"
+      parent: section.aplicada
       url: ''
       weight: 1
-    - name: Alerts
-      parent: section.shortcodes
+    - name: "Modelos para otros países"
+      parent: section.aplicada
       url: ''
       weight: 2
-    - name: Buttons
-      parent: section.shortcodes
+    - name: "Modelos multipaíses"
+      parent: section.aplicada
       url: ''
       weight: 3
-    - name: Content Boxes
-      parent: section.shortcodes
-      url: ''
-      weight: 4
-    - name: Horizontal Blocks
-      parent: section.shortcodes
-      url: ''
-      weight: 5
-    - name: Pagination
-      parent: section.shortcodes
-      url: ''
-      weight: 6
-    - name: Tabs
-      parent: section.shortcodes
-      url: ''
-      weight: 7
-    - name: Typography
-      parent: section.shortcodes
-      url: ''
-      weight: 8
-    - name: Default Sticky Header
-      parent: section.headervariations
-      url: ''
-      weight: 1
-    - name: No Sticky Header
-      parent: section.headervariations
-      url: ''
-      weight: 2
-    - name: Light Header
-      parent: section.headervariations
-      url: ''
-      weight: 3
-    - identifier: menu.portfolio
-      name: Portfolio
-      url: /img/template-homepage.png
-      weight: 3
-    - identifier: section.portfolio
-      name: Portfolio
-      parent: menu.portfolio
-      post: 1
-      url: ''
-      weight: 1
-    - name: 2 Columns
-      parent: section.portfolio
-      url: ''
-      weight: 1
-    - name: 2 Columns With Negative Space
-      parent: section.portfolio
-      url: ''
-      weight: 2
-    - name: 3 Columns
-      parent: section.portfolio
-      url: ''
-      weight: 3
-    - name: 3 Columns With Negative Space
-      parent: section.portfolio
-      url: ''
-      weight: 4
-    - name: 4 Columns
-      parent: section.portfolio
-      url: ''
-      weight: 5
-    - name: 4 Columns With Negative Space
-      parent: section.portfolio
-      url: ''
-      weight: 6
-    - name: Portfolio - detail
-      parent: section.portfolio
-      url: ''
-      weight: 7
-    - name: Portfolio - detail 2
-      parent: section.portfolio
-      url: ''
-      weight: 8
-    - identifier: section.about
-      name: About
-      parent: menu.portfolio
-      post: 2
-      url: ''
-      weight: 2
-    - name: About Us
-      parent: section.about
-      url: ''
-      weight: 1
-    - name: Our Team
-      parent: section.about
-      url: ''
-      weight: 2
-    - identifier: section.marketing
-      name: Marketing
-      parent: menu.portfolio
-      post: 2
-      url: ''
-      weight: 3
-    - name: Packages
-      parent: section.marketing
-      url: ''
-      weight: 1
-    - identifier: menu.allpages
-      name: All Pages
-      url: ''
-      weight: 4
-    - identifier: section.ap-home
-      name: Home
-      parent: menu.allpages
-      post: 1
-      url: ''
-      weight: 1
-    - identifier: section.ap-about
-      name: About
-      parent: menu.allpages
-      post: 1
-      url: ''
-      weight: 2
-    - identifier: section.ap-marketing
-      name: Marketing
-      parent: menu.allpages
+    - identifier: section.otros
+      name: "Otros"
+      parent: menu.temas
       post: 1
       url: ''
       weight: 3
-    - identifier: section.ap-portfolio
-      name: Portfolio
-      parent: menu.allpages
-      post: 2
-      url: ''
-      weight: 1
-    - identifier: section.ap-userpages
-      name: User Pages
-      parent: menu.allpages
-      post: 2
-      url: ''
+    - name: "Estadística"
+      parent: section.otros
+      url: /categories/estadistica/
       weight: 2
-    - identifier: section.ap-shop
-      name: Shop
-      parent: menu.allpages
-      post: 3
-      url: ''
-      weight: 1
-    - identifier: section.ap-shoporderprocess
-      name: Shop - Order Process
-      parent: menu.allpages
-      post: 3
-      url: ''
-      weight: 2
-    - identifier: section.ap-contact
-      name: Contact
-      parent: menu.allpages
-      post: 4
-      url: ''
-      weight: 1
-    - identifier: section.ap-pages
-      name: Pages
-      parent: menu.allpages
-      post: 4
-      url: ''
-      weight: 2
-    - identifier: section.ap-blog
-      name: Blog
-      parent: menu.allpages
-      post: 4
-      url: /blog/
-      weight: 3
-    - name: Blog Listing Big
-      parent: section.ap-blog
-      url: /blog/
-      weight: 1
     - identifier: menu.blog
       name: Blog
       url: /blog/
       weight: 5
-    - identifier: menu.faq
-      name: FAQ
-      url: /faq/
-      weight: 6
     - identifier: contacto
       name: Contacto
       url: /contact/
