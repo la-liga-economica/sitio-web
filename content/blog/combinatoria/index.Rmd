@@ -1,0 +1,38 @@
+---
+title: Combinatoria
+authors:
+- Victor Hernandez
+date: '2021-10-06'
+slug: []
+categories:
+  - estadistica
+  - R
+tags:
+  - estadistica
+  - probabilidad
+banner: img/banners/banner_combinatoria.PNG
+---
+
+## Permutaciones
+
+Las permutaciones de $n$ elementos son las posibles ordenaciones de un conjunto de $n$ elementos distintos.
+
+$$n!=1 \cdot 2 \cdot 3 \cdot \dotsc \cdot (n-2) \cdot (n-1) \cdot n$$
+
+Por convención, sólo hay una permutación de cero elementos:
+
+$$0!=1$$
+
+Una propiedad útil es que la división de dos permutaciones deja sólo el múltiplo de los números de la diferencia. Por 
+ejemplo:
+
+$$\frac{10!}{7!} = \frac{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7 \cdot 8 \cdot 9 \cdot 10}
+{1 \cdot 2 \cdot 3 \cdot 4 \cdot 5 \cdot 6 \cdot 7} = 8 \cdot 9 \cdot 10$$
+
+En el lenguaje R, se puede usar la función ``factorial(n)`` para hacer el cálculo numérico:
+
+```{r}
+factorial(3)
+factorial(4)
+factorial(0)
+```

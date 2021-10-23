@@ -1,0 +1,30 @@
+---
+title: Publicacion de prueba
+authors:
+- Victor Hernandez
+date: '2021-10-15'
+slug: publicacion-de-prueba
+categories:
+  - starting
+tags:
+  - pruebas
+  - hugo
+  - theme
+
+---
+
+# Titulo
+
+Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente.
+
+Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente. Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente. Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente.
+
+## Subtítulo
+
+Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente.Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente.Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente.Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente.Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente.Esta es una publicación de prueba para asegurarme de que el contenido se carga correctamente.
+
+### Ecuación
+
+Esta es una ecuación
+
+$$x_{i} = y_{i} + \epsilon$$
