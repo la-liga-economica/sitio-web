@@ -63,6 +63,16 @@ menu:
       parent: section.otros
       url: /categories/estadistica/
       weight: 2
+    - identifier: section.coyuntura
+      name: "Coyuntura"
+      parent: menu.temas
+      post: 2
+      url: ''
+      weight: 4
+    - name: "Indicares recientes"
+      parent: section.coyuntura
+      url: ''
+      weight: 1
     - identifier: menu.blog
       name: Blog
       url: /blog/
@@ -71,6 +81,10 @@ menu:
       name: Contacto
       url: /contact/
       weight: 7
+    - identifier: quienessomos
+      name: Quiénes somos
+      url: /about_us/
+      weight: 8
   topbar:
     - name: Phone
       pre: <i class='fas fa-2x fa-phone'></i>
@@ -106,7 +120,7 @@ params:
     slide_speed: 2000
   carouselHomepage:
     auto_play: yes
-    enable: yes
+    enable: no
     pagination_speed: 1000
     slide_speed: 2000
   carouselTestimonals:
@@ -115,7 +129,7 @@ params:
     pagination_speed: 1000
     slide_speed: 2000
   clients:
-    enable: yes
+    enable: no
     subtitle: ''
     title: Our Clients
   contact_form_ajax: no
@@ -158,20 +172,19 @@ params:
   see_more:
     enable: yes
     icon: far fa-file-alt
-    link_text: Check other homepages
-    link_url: '#'
-    subtitle: We have prepared for you more than 40 different HTML pages, including
-      5 variations of homepage.
-    title: Do you want to see more?
+    link_text: Quienes somos
+    link_url: '/about_us/'
+    subtitle: Somos un grupo de egresados de la facultad de economía de la UNAM, interesados en temas actuales de economía y estadística.
+    title: ¿Quiénes somos?
   style: marsala
   testimonials:
-    enable: yes
+    enable: no
     subtitle: We have worked with many clients and we always like to hear they come
       out from the cooperation happy and satisfied. Have a look what our clients said
       about us.
     title: Testimonials
   topbar:
-    enable: yes
+    enable: no
     text: "<p class=\"hidden-sm hidden-xs\">Contact us on +420 777 555 333 or hello@universal.com.</p>\r\n
       \     <p class=\"hidden-md hidden-lg\"><a href=\"tel:+420 777 555 333\" data-animate-hover=\"pulse\"><i
       class=\"fas fa-phone\"></i></a>\r\n      <a href=\"mailto:hello@universal.com\"
