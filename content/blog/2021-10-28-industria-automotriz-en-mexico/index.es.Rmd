@@ -1,0 +1,21 @@
+---
+title: Industria automotriz en Mexico 
+authors:
+- Valeria Garcia
+date: '2021-10-28'
+slug: industria-automotriz-en-mexico
+categories:
+  - industria
+tags:
+  - trabajo
+  - medio ambiente
+---
+# Salarios y empleo
+
+## Resumen
+
+El salario y el empleo en la indsutria automotriz en México
+
+Salario relativo
+
+$$SR=\frac{V}{mp+V}$$
