@@ -1,0 +1,27 @@
+---
+title: Ejemplo de publicación
+authors:
+- Victor Hernandez
+date: '2021-10-28'
+slug: ejemplo-de-publicacion
+categories:
+  - programming
+tags:
+  - pruebas
+  - hugo
+  - R Markdown
+---
+
+# Título
+
+## Subtítulo
+
+### Sub-subtítulo
+
+Texto simple. 
+
+Nuevo párrafo
+
+Para palabras en *cursivas* ponerlas entre asteriscos.
+
+Para palabras en **negritas**, ponerlas entre asteriscos dobles.
