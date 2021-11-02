@@ -15,7 +15,7 @@ menu:
       weight: 1
     - identifier: menu.temas
       name: Temas
-      url: /img/template-easy-customize.png
+      url: /img/menu_temas.jpg
       weight: 2
     - identifier: section.teoria
       name: "Teoría económica"
@@ -164,17 +164,15 @@ params:
   recent_posts:
     enable: yes
     hide_summary: no
-    subtitle: Pellentesque habitant morbi tristique senectus et netus et malesuada
-      fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
-      tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
-      ultricies mi vitae est. Mauris placerat eleifend leo.
+    subtitle: Revisa nuestras publicaciones más recientes, o busca por categoría usando los menús superiores.
     title: Nuestro blog
   see_more:
     enable: yes
-    icon: far fa-file-alt
-    link_text: Quienes somos
+    icon: fas fa-id-badge
+    link_text: Saber más
     link_url: '/about_us/'
-    subtitle: Somos un grupo de egresados de la facultad de economía de la UNAM, interesados en temas actuales de economía y estadística.
+    subtitle: Somos un grupo de economistas interesados en temas actuales de economía, teoría económica aplicada y estadística.
+              En este sitio encontrarás aplicaciones, avances de investigación y tutoriales sobre estos temas.
     title: ¿Quiénes somos?
   style: marsala
   testimonials:
