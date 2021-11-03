@@ -1,0 +1,128 @@
+---
+title: Cómo crear un sitio web usando blogdown y el tema Universal
+authors:
+- Victor Hernandez
+date: '2021-11-02'
+slug: crear un sitio web usando blogdown
+categories:
+  - General
+tags:
+  - tutorial
+  - R
+summary: Cómo creamos este sitio web usando el paquete Blogdown y el tema *Universal*.
+---
+
+<script src="{{< blogdown/postref >}}index.es_files/header-attrs/header-attrs.js"></script>
+
+
+<div id="introducción" class="section level2">
+<h2>Introducción</h2>
+<p>Este sitio web y todas sus publicaciones son creadas mediante herramientas de código abierto que cualquiera puede descargar
+y empezar a utilizar fácilmente. En esta publicación, hago una descripción de los pasos que seguimos para crear el sitio,
+la configuración básica y los pasos a seguir para añadir y editar publicaciones.</p>
+<p>Esta es la lista de cosas que es necesario tener instaladas para que esto funcione:</p>
+<ul>
+<li><a href="https://cran.r-project.org/bin/windows/base/">R</a></li>
+<li><a href="https://www.rstudio.com/">RStudio</a></li>
+<li><a href="https://gitforwindows.org/">Git</a></li>
+<li><a href="https://www.sourcetreeapp.com/">Sourcetree</a></li>
+</ul>
+<p>Si ya estas familiarizado con git, este último programa es opcional. Requerirás también estar registrado en las siguientes
+plataformas:</p>
+<ul>
+<li><a href="https://github.com/">Github</a></li>
+<li><a href="https://www.netlify.com/">Netlify</a></li>
+</ul>
+<p>En Netlify puedes registrarte usando tus credenciales de Github, por lo que es un proceso sencillo.</p>
+<p>Recomiento leer la <a href="https://bookdown.org/yihui/blogdown/">documentación del paquete Blogdown</a> como punto de partida. Si
+después de seguir esas instrucciones sigues teniendo dudas sobre algunos pasos, es posible que aquí encuentres la respuesta.</p>
+</div>
+<div id="por-qué-blogdown" class="section level2">
+<h2>Por qué Blogdown</h2>
+</div>
+<div id="instalación-y-configuración-previa" class="section level2">
+<h2>Instalación y configuración previa</h2>
+</div>
+<div id="creación-del-sitio-web" class="section level2">
+<h2>Creación del sitio web</h2>
+<div id="primero-el-repositorio" class="section level3">
+<h3>Primero el repositorio</h3>
+<p>Una vez registrado en <a href="https://github.com/">Github</a>, puedes crear el repositorio que contendrá los archivos de tu sitio.
+El nombre del repositorio es irrelevante para el sitio; puedes verlo como el nombre de la carpeta donde están tus archivos.</p>
+<div class="figure">
+<img src="capturas/captura-crear-repositorio.png" title="Vista al crear un repositorio en Github" alt="" />
+<p class="caption">Pantalla al crear un repositorio en Github</p>
+</div>
+<p>Es una buena práctica incluir un archivo README durante la creación del repositorio, donde se incluirá la descripción del contenido.
+Aquí puedes incluir las instrucciones para actualizar tu sitio, por ejemplo. De este modo, si dejas de lado este proyecto por
+unos dias (<em>o meses</em>), no tienes que volver a buscar esas instrucciones en internet.</p>
+<p>Puedes incluir también un archivo <code>.gitignore</code>, el cual tiene una lista de archivos que <strong>no</strong> te interesa mantener actualizados.
+Es decir, son archivos que pueden ser modificados en tu computadora personal, pero no quieres que se carguen en tu repositorio en línea.
+Si no creas este archivo durante la creación del repositorio, puedes añadirlo más adelante. Incluso, Blogdown creará este
+archivo si no lo encuentra en la raíz de tu proyecto.</p>
+<p>Una vez creado el repositorio en Github, necesitamos crear una copia local en nuestra computadora. Esto puede hacerse directamente
+desde RStudio, <a href="https://happygitwithr.com/new-github-first.html">siguiendo estas instrucciones</a>. Sin embargo, como señalé
+antes, el manejador de RStudio para git puede causar que el programa se congele, por lo que recomiendo usar Sourcetree para esto.</p>
+</div>
+<div id="clonar-el-repositorio-con-sourcetree-y-empezar-un-proyecto" class="section level3">
+<h3>Clonar el repositorio con Sourcetree y empezar un proyecto</h3>
+<p>Asumiendo que ya tienes <a href="#instalación-y-configuración-previa">Sourcetree y Github asociados correctamente</a>, el siguiente
+paso es clonar el repositorio, es decir, crear una copia local en tu computadora, de los archivos cargados en Github.</p>
+<p>En la vista de tu repositorio, busca el botón “Code”, selecciona la opción de “SSH” y copia el texto.</p>
+<div class="figure">
+<img src="capturas/captura-clonar-github.png" title="Vista al clonar un repositorio desde Github" alt="" />
+<p class="caption">Pantalla para clonar un repositorio</p>
+</div>
+<p>En una pestaña nueva de Sourcetree, elige la opción “<em>Clone</em>” e introduce el texto copiado en el campo para el “URL”.
+En “<em>Destination Path</em>” selecciona la carpeta donde quieres descargar los archivos. Debería ser una carpeta vacía.
+Si todo sale bien, Sourcetree descargará tus archivos <code>README</code> y <code>.gitignore</code> en la carpeta que seleccionaste.</p>
+<div class="figure">
+<img src="capturas/captura-clonar-sourcetree.png" title="Vista al clonar un repositorio con Sourcetree" alt="" />
+<p class="caption">Clonar repositorio con Sourcetree</p>
+</div>
+<p>Ahora que tienes una carpeta con los archivos de Github, puedes crear un nuevo proyecto usando RStudio, usando la carpeta
+que acabas de crear. Es importante crear el proyecto en la raiz de la carpeta y no en subcarpetas. De lo contrario,
+podrías tener problemas al conectar tu repositorio con Netlify.</p>
+</div>
+<div id="crear-el-sitio-usando-blogdown" class="section level3">
+<h3>Crear el sitio usando <em>Blogdown</em></h3>
+<p>Si seguiste el tutorial de la <a href="https://bookdown.org/yihui/blogdown/">documentación del paquete Blogdown</a>, ya tienes instalados
+el paquete Blogdown y sus paquetes complementarios. Si no lo has hecho, te recomendamos hacerlo.</p>
+<p>El mejor flujo de trabajo es crear el sitio después de haber elegido un tema. En este caso, usaremos el
+<a href="https://themes.gohugo.io/themes/hugo-universal-theme/">tema <em>Universal</em></a>, pero puedes elegir una gran variedad de temas
+en el <a href="https://themes.gohugo.io/">sitio de Hugo</a>.</p>
+<p><strong>Una advertencia sobre el tema <em>Academic</em> </strong>. A pesar de su popularidad (prácticamente todos los tutoriales que consulté
+lo usaban), el creador de este tema ha hecho cambios en su funcionamiento que <a href="https://github.com/rstudio/blogdown/issues/638">limitan su compatibilidad con <em>Blogdown</em></a>, por lo que los creadores
+de <em>Blogdown</em> en su lugar recomiendan el <a href="https://hugo-apero-docs.netlify.app/">tema <em>Apéro</em></a>, el cual tiene funcionalidades
+similares.</p>
+<p>Entonces, para crear un sitio basado en el tema que elegiste, necesitas identificar la fuente del tema. Esto es, la dirección del
+repositorio donde se encuentra el tema. En nuestro caso, el tema <em>Universal</em> se encuentra en el siguiente repositorio:
+<code>https://github.com/devcows/hugo-universal-theme</code>. Lo que necesitamos son las dos últimas partes de este URL, las cuales
+se refieren al nombre de quién creó el repositorio (“devcows”) y el nombre del repositorio (“hugo-universal-theme”).
+Para crear el sitio, basta con ejecutar el sigiente comando en la consola de RStudio.</p>
+<pre class="r"><code>blogdown::new_site(theme = &quot;devcows/hugo-universal-theme&quot;)</code></pre>
+<p>Esta función puede tener más argumentos, pero para la creación de este sitio dejamos todo lo demás por default. Posiblemente
+el sistema te pida que instales <em>Hugo</em>, para lo cual hay que seguir las instrucciones que te aparezcan en la pantalla.
+Cuando R termine de descargar los archivos del tema, te preguntará si quieres mostrar el sitio, a lo cual hay que responder
+<code>y</code> si lo deseas en este momento, o <code>n</code> si deseas hacerlo más adelante mediante la función <code>blogdown::serve_site()</code>.</p>
+<p>Si elegiste mostrar el sitio, o usaste la función <code>blogdown::serve_site()</code>, RStudio te mostrará una vista previa del sitio
+en la ventana “<em>Viewer</em>”. Puedes ver tu sitio también en el navegador de internet si presionas este botón</p>
+<div class="figure">
+<img src="capturas/captura-viewer.png" alt="" />
+<p class="caption">Despliega el <em>preview</em> en tu navegador</p>
+</div>
+<p>Si todo salió bien, deberías ver algo como la siguiente captura. En cambio, si lo que ves no se parece a esto y en su
+lugar hay sólo texto sin colores, es posible que el primer cambio en la configuración que mostraremos en la siguiente
+sección lo solucione.</p>
+<div class="figure">
+<img src="capturas/captura-universal.png" alt="" />
+<p class="caption">Sitio <em>Universal</em> recién salido del horno</p>
+</div>
+</div>
+</div>
+<div id="configuración-del-tema" class="section level2">
+<h2>Configuración del tema</h2>
+</div>
+<div id="creación-y-actualización-de-publicaciones" class="section level2">
+<h2>Creación y actualización de publicaciones</h2>
+</div>
