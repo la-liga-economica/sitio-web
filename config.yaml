@@ -174,7 +174,7 @@ params:
     subtitle: Somos un grupo de economistas interesados en temas actuales de economía, teoría económica aplicada y estadística.
               En este sitio encontrarás aplicaciones, avances de investigación y tutoriales sobre estos temas.
     title: ¿Quiénes somos?
-  style: marsala
+  style: default
   testimonials:
     enable: no
     subtitle: We have worked with many clients and we always like to hear they come
