@@ -17,62 +17,38 @@ menu:
       name: Temas
       url: /img/menu_temas.jpg
       weight: 2
-    - identifier: section.teoria
-      name: "Teoría económica"
+    - identifier: section.reportes
+      name: "Reportes de la liga económica"
       parent: menu.temas
       post: 1
       url: ''
       weight: 1
-    - name: "Microeconomía"
-      parent: section.teoria
+    - name: "Reporte económico mensual"
+      parent: section.reportes
       url: ''
       weight: 1
-    - name: "Macroeconomía"
-      parent: section.teoria
+    - name: "Temas de coyuntura"
+      parent: section.reportes
       url: ''
       weight: 2
-    - name: "Mesoeconomía"
-      parent: section.teoria
-      url: ''
-      weight: 3
-    - identifier: section.aplicada
-      name: "Economía aplicada"
-      parent: menu.temas
-      post: 2
-      url: ''
-      weight: 2
-    - name: "Modelos para México"
-      parent: section.aplicada
-      url: ''
-      weight: 1
-    - name: "Modelos para otros países"
-      parent: section.aplicada
-      url: ''
-      weight: 2
-    - name: "Modelos multipaíses"
-      parent: section.aplicada
-      url: ''
-      weight: 3
     - identifier: section.otros
       name: "Otros"
       parent: menu.temas
-      post: 1
-      url: ''
-      weight: 3
-    - name: "Estadística"
-      parent: section.otros
-      url: /categories/estadistica/
-      weight: 2
-    - identifier: section.coyuntura
-      name: "Coyuntura"
-      parent: menu.temas
       post: 2
       url: ''
-      weight: 4
-    - name: "Indicares recientes"
-      parent: section.coyuntura
+      weight: 2
+    - name: "Teoría económica"
+      parent: section.otros
       url: ''
       weight: 1
+    - name: "Teoría económica aplicada"
+      parent: section.otros
+      url: ''
+      weight: 2
+    - name: "Temas generales"
+      parent: section.otros
+      url: '/categories/general/'
+      weight: 3
     - identifier: menu.blog
       name: Blog
       url: /blog/
