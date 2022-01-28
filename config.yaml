@@ -83,8 +83,8 @@ menu:
       url: mailto:hello@universal.com
       weight: 5
 params:
-  about_us: <p>Pellentesque habitant morbi tristique senectus et netus et malesuada
-    fames ac turpis egestas.</p>
+  about_us: <p>Somos un grupo de economistas con interés de difundir las técnicas de análisis económico y estadístico,
+    mediante aplicaciones empíricas sobre la economía actual.</p>
   address: "<p class=\"text-uppercase\"><strong>Universal Ltd.</strong>\r\n        <br>13/25
     New Avenue\r\n        <br>Newtown upon River\r\n        <br>45Y 73J\r\n        <br>England\r\n
     \       <br>\r\n        <strong>Great Britain</strong>\r\n      </p>\r\n      "
