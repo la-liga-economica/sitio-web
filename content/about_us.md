@@ -16,6 +16,8 @@ Nuestro objetivo es establecer un puente entre la investigación económica y el
 
 Maestra en economía por la Facultad de Economía de la UNAM y ayudante de profesor en la asignatura de Economía Política en el programa de maestría en economía de la UNAM. Ha colaborado en diversos proyectos de investigación como ayudante y ha participado en diferentes congresos y ponencias. Sus áreas de interés son economía ecológica, economía laboral, economía política y las discusiones referentes al impacto ambiental del actual modo de acumulación de capital para países periféricos.
 
+Contacto: valeria_63@comunidad.unam.mx
+
 ### Victor Hugo Hernández García
 *Todos los comentarios son a título personal.*
 
@@ -28,4 +30,6 @@ Actualmente es jefe de departamento de investigación, en la Dirección General 
 Contacto: victorhhg@outlook.com
 * [LinkedIn](https://www.linkedin.com/in/victor-hhg/)
 * [Github](https://github.com/Victor-HHG)
+
+
 
