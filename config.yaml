@@ -1,9 +1,9 @@
 baseurl: https://la-liga-economica.netlify.app/
-title: La liga económica
+title: La Liga Económica
 theme: hugo-universal-theme
 languageCode: en-us
 defaultContentLanguage: es
-disqusShortname: devcows
+disqusShortname: laligaeconomica
 googleAnalytics: ''
 summaryLength: 70
 paginate: 10
@@ -85,9 +85,8 @@ menu:
 params:
   about_us: <p>Somos un grupo de economistas con interés de difundir las técnicas de análisis económico y estadístico,
     mediante aplicaciones empíricas sobre la economía actual.</p>
-  address: "<p class=\"text-uppercase\"><strong>Universal Ltd.</strong>\r\n        <br>13/25
-    New Avenue\r\n        <br>Newtown upon River\r\n        <br>45Y 73J\r\n        <br>England\r\n
-    \       <br>\r\n        <strong>Great Britain</strong>\r\n      </p>\r\n      "
+  address: "<p class=\"text-uppercase\"><strong>Escríbenos:</strong>\r\n        <br>laligaeconomica@gmail.com\r\n
+    \       <br>\r\n        \r\n      </p>\r\n      "
   author: la-liga-economica
   carouselCustomers:
     auto_play: no
@@ -110,7 +109,7 @@ params:
     title: Our Clients
   contact_form_ajax: no
   contact_url: /contact
-  copyright: Copyright (c) 2015 - 2016, YourCompany; all rights reserved.
+  copyright: Copyright (c) 2022, La Liga Económica.
   date_format: 2 de January de 2006
   default_sharing_image: img/sharing-default.png
   defaultDescription: Site template made by devcows using hugo
